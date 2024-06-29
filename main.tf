@@ -76,7 +76,7 @@ resource "aws_s3_object" "index_php" {
 
 resource "aws_instance" "web" {
   count         = 3
-  ami           = "ami-00beae93a2d981137" # Asegúrate de que esta AMI está disponible en tu región
+  ami           = "ami-00beae93a2d981137" 
   instance_type = "t2.micro"
   key_name      = "vockey"
 
